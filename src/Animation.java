@@ -2,7 +2,7 @@
 public class Animation extends MyFrame {
 
 	// 処理停止させる秒数
-	private float _sleepSecond = 0.03f;
+	private float _sleepSecond = 0.02f;
 
 	public void run() {
 
@@ -10,8 +10,8 @@ public class Animation extends MyFrame {
 
 		//Practice5_1();
 		//Practice5_2();
-
 		//Practice5_3();
+		
 		//Practice5_EX();
 		Practice5_EX2();
 	}
@@ -200,7 +200,7 @@ public class Animation extends MyFrame {
 				fillOval(x, y, 100, 100);
 
 				// 三項演算子
-				// isRightがTrueなら→へ移動　Falseなら←へ移動
+				// isRightがTrueなら→へ移動 Falseなら←へ移動
 				x += isRight ? 5 : -5;
 				sleep(_sleepSecond);
 			}
