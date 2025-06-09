@@ -21,5 +21,8 @@ public class Car {
 		x += vx;
 		y += vy;
 
+		if (x > 450) {
+			x -= 500;
+		}
 	}
 }
