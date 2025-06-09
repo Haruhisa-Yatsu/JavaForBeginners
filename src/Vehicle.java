@@ -1,7 +1,7 @@
 
 public class Vehicle {
 	int x, y, vx, vy;
-	
+
 	public Vehicle(int x, int y, int vx, int vy) {
 		this.x = x;
 		this.y = y;
@@ -17,5 +17,9 @@ public class Vehicle {
 		if (x > 450) {
 			x -= 500;
 		}
+	}
+
+	public void draw(MyFrame f) {
+
 	}
 }
