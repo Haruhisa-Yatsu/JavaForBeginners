@@ -10,12 +10,15 @@ public class Vehicle {
 		this.vy = vy;
 	}
 
-	public void move() {
+	public void move(MyFrame frame) {
 		x += vx;
 		y += vy;
 
-		if (x > 450) {
-			x -= 500;
+		if (x > frame.getWidth()) {
+			x -= frame.getWidth() + 100;
+		}
+		if (x < -100) {
+			x += frame.getWidth() + 100;
 		}
 	}
 

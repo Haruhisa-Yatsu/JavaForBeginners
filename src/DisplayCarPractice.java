@@ -14,7 +14,7 @@ public class DisplayCarPractice extends MyFrame {
 
 			for (int j = 0; j < faces.size(); j++) {
 				faces.get(j).draw(this);
-				faces.get(j).move();
+				faces.get(j).move(this);
 			}
 			sleep(0.03);
 		}

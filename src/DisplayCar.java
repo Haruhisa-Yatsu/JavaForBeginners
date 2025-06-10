@@ -8,10 +8,10 @@ public class DisplayCar extends MyFrame {
 		for (int i = 0; i < 30; i++) {
 			clear();
 			face1.draw(this);
-			face1.move();
+			face1.move(this);
 
 			face2.draw(this);
-			face2.move();
+			face2.move(this);
 
 			sleep(0.1);
 		}
